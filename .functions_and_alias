@@ -61,7 +61,6 @@ alias reload='source ~/.bashrc'
 alias biggest='BLOCKSIZE=1048576; du -x | sort -nr | head -10'
 alias grep='grep --color'
 alias rgrep='grep -r'
-alias docker='sudo docker'
 alias dcp='docker-compose'
 
 ## App-specific
@@ -70,4 +69,10 @@ alias wget='wget -c'
 ## Change to root user
 alias root='sudo su -'
 
+# GIT
+alias gptag="git describe --abbrev=0 --tags `git rev-list --tags --skip=1 --max-count=1`"
+alias gctag="git describe --abbrev=0 --tags"
+alias v="vscode ."
+alias glog="git log --oneline --decorate --graph"
 
+# git log --pretty=format:"author: %cn; date: %ci; Action:%s" $(git describe --abbrev=0 --tags `git rev-list --tags --skip=1 --max-count=1`)...$(git describe --abbrev=0 --tags)

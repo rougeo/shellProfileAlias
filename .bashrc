@@ -70,8 +70,8 @@ fi
 
 
 # source function and alias file
-if [[ -f /home/$(whoami)/.function_and_alias ]]; then
-    . /home/$(whoami)/.function_and_alias
+if [[ -f /home/$(whoami)/.functions_and_alias ]]; then
+    . /home/$(whoami)/.functions_and_alias
 fi
 # source docker alias file
 if [[ -f /home/$(whoami)/.docker_alias ]]; then

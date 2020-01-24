@@ -70,8 +70,8 @@ alias wget='wget -c'
 alias root='sudo su -'
 
 # GIT
-alias gptag="git describe --abbrev=0 --tags `git rev-list --tags --skip=1 --max-count=1`"
-alias gctag="git describe --abbrev=0 --tags"
+alias gptag="git describe --abbrev=0 --tags $(git rev-list --tags --skip=1 --max-count=1)"  # git previous tag
+alias gctag="git describe --abbrev=0 --tags" # git current tag
 alias v="vscode ."
 alias glog="git log --oneline --decorate --graph"
 
